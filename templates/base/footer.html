@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Social Media Icons</title>
+    <link href="{{ url_for('static',filename='css/footer.css') }}"
+    rel="stylesheet">
+</head>
+<body>
+    <footer>
+        <div class="social-icons">
+            <a href="{{ insta }}"><img src="{{url_for('static',filename='images/insta.png')}}" alt="Facebook"></a>
+            <a href="{{ facebook }}"><img src="{{url_for('static',filename='images/gb.png')}}" alt="Twitter"></a>
+            <a href="{{ linkedin }}"><img src="{{url_for('static',filename='images/link.png')}}" alt="Instagram"></a>
+            
+        </div>
+        <p>&copy; 2024 Portfolio</p>
+    </footer>
+</body>
+</html>

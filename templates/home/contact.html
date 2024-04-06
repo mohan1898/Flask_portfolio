@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+{% block title %}Contact {% endblock %}
+
+{% block content %}
+<div id="preloader"></div>
+<div class="container mt-4 d-flex flex-column mb-3">
+    <h2 class="p-5 my-3">Contact Us</h2>
+    <form method="POST">
+        <div class="container-contact">
+            
+            <form  method="POST">
+                <label class="form-label" for="name">Phone:</label><br>
+                <input class="form-control" type="number" id="name" name="id" required><br>
+                <label class="form-label" for="name">Name:</label><br>
+                <input class="form-control" type="text" id="name" name="name" required><br>
+                <label class="form-label" for="email">Email:</label><br>
+                <input class="form-control" type="email" id="email" name="email" required><br>
+                <label class="form-label" for="message">Message:</label><br>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea><br>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+        </div>
+    </form>
+</div>
+
+{% include 'base/footer.html' %}
+{% endblock %}

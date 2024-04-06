@@ -1,0 +1,59 @@
+{% extends 'base/base.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+<div class="aboutme container mt-3 d-flex flex-column">
+    <h2>Mohan Sai</h2>
+    <p>Iam MCA Graduate,Passionate Web Developer</p>
+    <h3>My Skill Expertise in:</h3>
+    <ul class="nav d-flex flex-column">
+        <li class="nav-item">Python</li>
+        <li class="nav-item">Django</li>
+        <li class="nav-item">Flask</li>
+        <li class="nav-item">ReactJS</li>
+        <li class="nav-item">Django Rest Framework </li>
+    </ul>
+</div>
+<div class="container my-3">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ url_for('static',filename='images/profile1.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Iam aspring Web developer Passionate
+                    about Web Designing With UI/UX
+                  </p>
+                </div>
+              </div>   
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h1><span class="auto-type"></span></h1>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                  Quote
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>Building the web, one line of code at a time, weaving digital dreams into reality.</p>
+                    <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
+                  </blockquote>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <!-- <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h4 class="card-title">Primary card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div> -->
+        </div>
+    </div>
+</div>
+{% include 'base/footer.html' %}
+{% endblock %}

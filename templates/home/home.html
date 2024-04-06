@@ -1,0 +1,96 @@
+{% extends 'base/base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div id="preloader"></div>
+<div class="autotext">
+  <h1>Hello !!<span class="auto-type"></span></h1>
+
+</div>
+
+
+
+
+<div class="container mt-5">
+    <div class="swiper">
+        
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide img-fluid"><img class="img mt-3 my-3 p-5"src="{{ url_for('static',filename='images/sys.jpg')}}"></div>
+          <div class="swiper-slide img-fluid"><img class="img mt-3 my-3 p-5"src="{{ url_for('static',filename='images/brain.jpg')}}"></div>
+          <div class="swiper-slide img-fluid"><img class="img mt-3 my-3 p-5"src="{{ url_for('static',filename='images/coding.jpg')}}"></div>
+          <div class="swiper-slide img-fluid"><img class="img mt-3 my-3 p-5"src="{{ url_for('static',filename='images/think.jpg')}}"></div>         
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>       
+      </div>
+</div>
+<div class="container-fluid my-5">
+  <div class="row">
+      <div class="col">
+          <h2>Mohan Sai</h2>
+          <p>Web Developer</p>
+      </div>
+      <div class="col">
+          <h2>Welcome To My Portfolio</h2>
+          <p>Explore my work and projects</p>
+        <a href="{{ url_for('github') }}">Github</a>
+      </div>
+      <div class="col">
+          <h2>Contact Me</h2>
+          <h3>{{ email}}</h3>
+          <p>Phone: 91XXXXXX</p>
+      </div>
+  </div>
+</div>
+
+<div class="card-container">
+  <div class="card">
+    <img src="{{ url_for('static',filename='images/flask.jpeg')}}" alt="Image">
+    <div class="card-content">
+      <div class="card-title">Flask Microframework</div>
+      <div class="card-description">Flask is a lightweight web framework for Python, known for its simplicity and flexibility. It's designed to provide the basic tools needed for web development without imposing strict conventions or dependencies.</div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="{{ url_for('static',filename='images/django.jpeg')}}"alt="Image">
+    <div class="card-content">
+      <div class="card-title">Django Framework</div>
+      <div class="card-description">Django, on the other hand, is a high-level web framework for Python that prioritizes rapid development and clean, pragmatic design. Unlike Flask, Django follows the "batteries-included" philosophy, providing a comprehensive set of built-in features for common web development tasks. </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="{{ url_for('static',filename='images/react.jpeg')}}" alt="Image">
+    <div class="card-content">
+      <div class="card-title">React JS</div>
+      <div class="card-description">React.js, often referred to simply as React, is a JavaScript library for building user interfaces. Developed by Facebook, React is known for its component-based architecture, which enables developers to build UIs as a collection of reusable and encapsulated components.</div>
+    </div>
+  </div>
+  <div class="profile">
+    <img src="{{url_for('static',filename='images/profile.jpg')}}" alt="Profile Image" class="profile-image">
+    <div class="profile-details">
+        <h2 class="name">Mohan Sai</h2>
+        <p class="education">Education:</p>
+        <ul>
+            
+            <li>Master's in Computer Applications - Aurora PG College (2021-2023)</li>
+            <li>Bachelor's in Computer Science - Prathibha College (2017-2020)</li>
+        </ul>
+        <p class="skills">Skills:</p>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>React</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                
+            </ul>
+    </div>
+</div>
+</div>
+
+{% include 'base/footer.html' %}
+{% endblock %}
+

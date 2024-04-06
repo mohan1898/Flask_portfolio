@@ -1,0 +1,52 @@
+{% extends 'base/base.html' %}
+{% block title %}Github{% endblock %}
+
+{% block content %}
+<!-- <a href="{{ github }}">click here</a> -->
+<div id="preloader"></div>
+<div id="bgimg">
+
+</div>
+
+<header>
+    <div class="container-g">
+        
+        <nav>
+            <ul>
+                <li><a href="{{ github }}">Projects</a></li>
+                <li><a href="{{ github}}">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="projects">
+    <div class="container">
+        <h2 class="p-3">My Projects</h2>
+        <div class="project">
+            <h3>Lawyer Booking Management System</h3>
+            <p class="my-3 gap-2">The Lawyer Booking Management System, built with Django, is a user-friendly web app </p>
+            <a href="{{ lawyer }}">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Online Shoping Store</h3>
+            <p class="my-3 gap-2">The Online Shopping Store, powered by Django's ORM.</p>
+            <a href="{{ github }}">Visist my Github Repo</a>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+</section>
+
+<section id="github">
+    <div class="container">
+        <h2 class="my-2 p-3">GitHub Repository</h2>
+        <p class="my-2 p-3" >Explore my GitHub repository to see more projects:</p>
+        <a class="nav-link" href="{{ github }}" target="_blank">Visit My Repositorys</a>
+    </div>
+</section>
+
+
+</body>
+
+{% include 'base/footer.html' %}
+{% endblock %}
