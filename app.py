@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']=os.environ.get("DATABASE_URL")
-# postgres://testdb_efts_user:OzTZzoUtNGhmZfYqtOYxbg6eUpV504mC@dpg-cnpaj05a73kc73867ka0-a.oregon-postgres.render.com/testdb_efts
+# postgres://flask_portfolio_user:K70HoQYvjzV30bKA2ItO3sYEwZj8CsaJ@dpg-co8jqe8l5elc739040mg-a.oregon-postgres.render.com/flask_portfolio
 
 db=SQLAlchemy(app)
 class ContactUser(db.Model):
