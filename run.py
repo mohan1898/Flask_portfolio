@@ -1,3 +1,4 @@
-from my_portfolio import create_app
+from my_portfolio import my_portfolio
 
-app=create_app()
+app=my_portfolio()
+
