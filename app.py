@@ -1,8 +1,9 @@
 from flask import Flask,render_template,request,redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
-
+import os
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///testb'
+app.config['SQLALCHEMY_DATABASE_URI']=os.environ.get("DATABASE_URL")
+# postgres://my_portfolio_rnw4_user:wXvW8vdGaTIAv4wZNBpPMXKVoi72VtVE@dpg-co8fm5ev3ddc73fh68ug-a.oregon-postgres.render.com/my_portfolio_rnw4
 
 db=SQLAlchemy(app)
 class ContactUser(db.Model):
