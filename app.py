@@ -43,4 +43,4 @@ def github():
     return render_template('home/github.html',github=github,insta=insta,facebook=facebook,linkedin=linkedin,lawyer=lawyer)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
